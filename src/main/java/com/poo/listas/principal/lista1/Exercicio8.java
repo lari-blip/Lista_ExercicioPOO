@@ -1,4 +1,4 @@
-package com.poo.listas;
+package com.poo.listas.principal.lista1;
 
 import java.util.Scanner;
 
@@ -9,9 +9,9 @@ double celsius;
 double fahrenheit;
 
 System.out.println("Leia os graus em Fahrenheit: ");
-Scanner leia = new Scanner(System.in);
-fahrenheit = leia.nextDouble();
- 
+try (Scanner leia = new Scanner(System.in)) {
+    fahrenheit = leia.nextDouble();
+}
 celsius = (fahrenheit - 32) / 1.8;
 System.out.printf("Celsius:%.2f", celsius);
 

@@ -1,4 +1,4 @@
-package com.poo.listas;
+package com.poo.listas.principal.lista1;
 
 import java.util.Scanner;
 
