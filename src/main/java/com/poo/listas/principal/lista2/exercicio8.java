@@ -9,7 +9,8 @@ public class exercicio8 {
         int chances = 3;
         int pontuacao = 0;
 
-        System.out.println("Seja bem-vindo ao gameshow de perguntas!");
+        System.out.println("Seja bem-vindo ao jogo de perguntas!");
+        
         System.out.println("Quantos planetas Terra cabem dentro do sol?" +
                 "\n" +
                 "a) Um milhão\n" +
