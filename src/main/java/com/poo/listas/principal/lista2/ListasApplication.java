@@ -1,4 +1,4 @@
-package com.poo.listas.principal;
+package com.poo.listas.principal.lista2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +14,7 @@ public class ListasApplication {
 		SpringApplication.run(ListasApplication.class, args);
 	
 		//exercicio1.resolucao2();
-		exercicio4.resolucao2();
+		//exercicio4.resolucao2();
 		//Exercicio3.resolucao();
 		//Exercicio4.resolucao();
 		//Exercicio5.resolucao();
