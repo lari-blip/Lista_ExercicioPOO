@@ -12,6 +12,8 @@ public class exercicio3 {
     int fim = Math.max(num1, num2);
 
     System.out.println("Números pares entre" + inicio + " e " + fim + ":");
+    {
+
     
     for (int i = inicio; i <= fim; i++) {
         if (i % 2 == 0) {
