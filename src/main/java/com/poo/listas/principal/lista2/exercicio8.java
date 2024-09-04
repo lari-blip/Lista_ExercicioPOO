@@ -1,97 +1,72 @@
 package com.poo.listas.principal.lista2;
-
+import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
 
 public class exercicio8 {
-    public static void resolucao2() {
-     
-        Scanner sc = new Scanner(System.in);
-        int chances = 3;
-        int pontuacao = 0;
+   public static void resolucao2() throws InterruptedException{
+Scanner sc = new Scanner(System.in);
 
-        System.out.println("Seja bem-vindo ao gameshow de perguntas!");
-        System.out.println("Quantos planetas Terra cabem dentro do sol?" +
-                "\n" +
-                "a) Um milhão\n" +
-                "b) Cem\n" +
-                "c) Cento e ciquenta\n" +
-                "d) 1");
-        char resposta1 = sc.next().toLowerCase().charAt(0);
-        if (resposta1 == 'a'){
-            pontuacao ++;
-        }else {
-            chances--;
-            System.out.println("Respota errada, você tem apenas " + chances + " chances restantes");
-        }
-
-        if (chances > 0){
-            System.out.println("Em que lugar vivem mais cangurus do que pessoas?" +
-                    "\n" +
-                    "a) China\n" +
-                    "b) Rússia\n" +
-                    "c) Austrália\n" +
-                    "d) Israel");
-            char resposta2 = sc.next().toLowerCase().charAt(0);
-            if (resposta2 == 'c'){
-                pontuacao ++;
-            }else {
-                chances --;
-                System.out.println("Respota errada, você tem apenas " + chances + " chances restantes");
-            }
-        }
-        if (chances > 0){
-            System.out.println("Quantos olhos a maior parte das aranhas tem?" +
-                    "\n" +
-                    "a) 1\n" +
-                    "b) 2\n" +
-                    "c) 3\n" +
-                    "d) 4");
-            char resposta3 = sc.next().toLowerCase().charAt(0);
-            if (resposta3 == 'd'){
-                pontuacao ++;
-            }else {
-                chances --;
-                System.out.println("Respota errada, você tem apenas " + chances + " chances restantes");
-            }
-        }
-        if (chances > 0){
-            System.out.println("O que mede a Escala Mercali?" +
-                    "\n" +
-                    "a) Top Gun: Maverick\n" +
-                    "b)Intensidade sísmica de acordo com os danos provocados\n" +
-                    "c) Intensidade dos ventos\n" +
-                    "d) Eletronegatividade");
-            char resposta4 = sc.next().toLowerCase().charAt(0);
-            if (resposta4 == 'b'){
-                pontuacao ++;
-            }else {
-                chances --;
-                System.out.println("Respota errada, você tem apenas " + chances + " chances restantes");
-            }
-        }
-        if (chances > 0){
-            System.out.println("Quanto mede uma girafa?" +
-                    "\n" +
-                    "a) Entre 4,8 e 5,5\n" +
-                    "b) 2 metros\n" +
-                    "c) 2,5 metros\n" +
-                    "d) 4 metros");
-            char resposta5 = sc.next().toLowerCase().charAt(0);
-            if (resposta5 == 'a'){
-                pontuacao ++;
-            }else {
-                chances --;
-                System.out.println("Respota errada, você tem apenas " + chances + " chances restantes");
-            }
-        }
-
-        if (chances == 0){
-            System.out.println("Você esgotou suas chances! Fim de jogo.");
-        }else {
-            System.out.println("Sua pontuação final: " + pontuacao + " de 5");
-        }
+            int tentativa = 0;
+            int pontuacao = 0;
+            int erros=0;
+            int acertos=0;
+            String resposta;
 
 
-        sc.close();
+            System.out.println("SEJA BEM VINDO AO JOGO DAS 5 PERGUNTAS!!!");
+
+            String[][] perguntas ={ 
+            {"1.Quem pintou a Monalisa?", "a) Van Gogh", "b) Leonardo da Vinci", "c) Picasso", "d) Michelangelo", "b"},
+            {"2.Qual o maior planeta do Sistema Solar?", "a)Plutão", "b)Terra", "c)Jupiter", "d)Saturno", "c"},
+            {"3.Em que ano o apresentador Silvio Santos morreu?", "a)2012","b)2024","c)2000","d)2021", "b"},
+            {"4.Qual é a tradução da palavra BLUE ?", "a)Azul","b)Vermelho", "c)Amarelo", "d)Laranja","a"},
+            {"5.Qual foi a primeira capital do Brasil?", "a)Rio de Janeiro", "b)Brasilia", "c)Salvador","d)Belo Horizonte", "c" }};
+
+            for (int i = 0; i < perguntas.length; i++) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush(); 
+                System.out.println(perguntas[i][0]); 
+                
+                System.out.println(perguntas[i][1]); 
+                
+                System.out.println(perguntas[i][2]);
+                
+                System.out.println(perguntas[i][3]); 
+                
+                System.out.println(perguntas[i][4]); 
+                
+                System.out.print("Digite sua resposta: ");
+                 resposta = sc.nextLine();
+
+                if(resposta.equalsIgnoreCase(perguntas[i][5])){
+                    acertos++;
+                    System.out.println("Você acertou!!!");
+                    TimeUnit.SECONDS.sleep(3);
+                }
+                else{
+                    erros++;
+                    System.out.println("Que pena! Você errou.");
+                    TimeUnit.SECONDS.sleep(3);
+                }
+
+                if(erros==3){
+                    System.out.println("Você errou 3 vezes, GAME OVER.");
+                    break;
+                }
+                
+
+                if(erros<3){
+                    System.out.println("Você tem "+acertos+" acertos.");
+                }
+                
+                
+
+
+
+
+            
+
+           
+        }    
     }
 }

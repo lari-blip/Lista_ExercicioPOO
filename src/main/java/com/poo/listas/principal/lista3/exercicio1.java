@@ -3,7 +3,7 @@ package com.poo.listas.principal.lista3;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
     
-    public class exercicio1{
+    public class Exercicio1{
         public static void resolucao3() throws InterruptedException {
             
             int numeroDigitado;

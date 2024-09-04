@@ -1,25 +1,32 @@
 package com.poo.listas.principal.lista2;
 
-import java.util.Scanner;
+  import java.util.Scanner;
 
 public class exercicio7 {
-    public static void resolucao2() {
-       
-        Scanner sc = new Scanner(System.in);
-        int n1;
-        int n2;
+    public static void resolucao2(){
+      //Código de resolução: Exercicio7.resolucao2();
+         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite um número: ");
-        n1 = sc.nextInt();
+         System.out.println("Digite um número: ");
+         double numero1 = sc.nextInt();
 
-        System.out.println("Digite um número: ");
-        n2 = sc.nextInt();
+         System.out.println("Digite outro número: ");
+         double numero2 = sc.nextInt();
 
-        if(n1 % n2 == 0){
-            System.out.println("O número " + n1 + " é divisível por " + n2);
-        }else {
-            System.out.println("Eles não são divisíveis.");
+         if(numero1%numero2 == 0){
+            System.out.println("Número "+numero1+" é divisivel por "+numero2);
+         }
+         else if(numero2%numero1 == 0){
+            System.out.println("Número "+numero1+" é divisivel por "+numero2);
+         }
+         else{
+            System.out.println("Números informados não são divisiveis.");
+         }
+
+    sc.close();
         }
-        sc.close();
     }
-}
+    
+
+
+

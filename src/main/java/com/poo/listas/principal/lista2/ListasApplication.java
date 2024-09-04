@@ -3,9 +3,6 @@ package com.poo.listas.principal.lista2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.poo.listas.principal.lista2.exercicio1;
-import com.poo.listas.principal.lista2.exercicio2;
-import com.poo.listas.principal.lista2.exercicio4;
 
 @SpringBootApplication
 public class ListasApplication {
