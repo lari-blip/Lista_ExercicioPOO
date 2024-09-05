@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ListasApplication3 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		SpringApplication.run(ListasApplication3.class, args);
 	
-		
+		exercicio6.resolucao3();
 		
 	}
 
