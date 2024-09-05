@@ -1,13 +1,13 @@
 package com.poo.listas.principal.lista4;
 
-package com.poo.lista4;
+
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 
-public class Exercicio2 {
-    public static void resolucao() throws InterruptedException {
+public class exercicio2 {
+    public static void resolucao4() throws InterruptedException {
 
     Scanner leia = new Scanner(System.in);
 
