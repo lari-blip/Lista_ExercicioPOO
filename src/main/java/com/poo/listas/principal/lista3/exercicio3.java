@@ -1,6 +1,8 @@
 package com.poo.listas.principal.lista3;
 import java.util.Scanner;
 public class exercicio3 {
+
+
     Scanner scanner = new Scanner(System.in);
         
     System.out.println("Digite o primeiro número:");
@@ -22,4 +24,5 @@ public class exercicio3 {
     }
 
     scanner.close();
+}
 }
