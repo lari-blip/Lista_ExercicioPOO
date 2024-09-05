@@ -5,12 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class ListasApplication3 {
+public class ListasApplication4 {
 
 	public static void main(String[] args) throws InterruptedException {
-		SpringApplication.run(ListasApplication3.class, args);
+		SpringApplication.run(ListasApplication4.class, args);
 	
-		exercicio1.resolucao4();
+		exercicio4.resolucao4();
 		
 	}
 

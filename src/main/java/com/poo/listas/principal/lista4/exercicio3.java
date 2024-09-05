@@ -2,7 +2,7 @@ package com.poo.listas.principal.lista4;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
-public class Exercicio3 {
+public class exercicio3 {
 
     public static void resolucao4()throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
