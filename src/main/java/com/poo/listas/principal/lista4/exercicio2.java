@@ -1,5 +1,9 @@
 package com.poo.listas.principal.lista4;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f5615b9b51296e89be77d45fd8e3eaa6ddfb8a44
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
